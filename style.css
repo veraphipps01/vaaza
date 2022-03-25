@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+
+html, body {
+  height: 100%;
+  }
+
+html {
+    font-size: 120%;
+  line-height: 1.4;
+}
+
+  
+  video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  
+
+  .viewport-header {
+    position:relative;
+    height: 75vh;
+    text-align: left;
+    display: flex;
+    align-items: end;
+    justify-content: left;
+    margin-top: 200px;
+    padding-top: 200px;
+    margin-bottom: 100px;
+    padding-bottom: 100px;
+    }
+  
+
+
+  #wrapper {
+    display: block;
+    position: fixed;
+    text-align: center;
+    min-height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#div p {
+    font-size: 2em;
+    margin: 0;
+    padding-left: 2em;
+}
+
+#div ul {
+    list-style-type: none;
+}
+
+#div ul li {
+    display: inline;
+    padding: 20px 20px;
+    font-size: 100%;
+    margin: 0 30px;
+
+}
+footer {
+  position: absolute;
+  margin-top: 2%;
+  padding-right: 2%;
+  height: 40px;
+  width: 100%;
+  bottom: 0;
+  font-size: 70%;;
+  display: inline-block;
+}
+footer ul {
+  list-style-type: none;
+  text-align: left;
+}
+footer ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+li {
+  display: inline;
+  margin-right: 10px;
+}
+
+a { text-decoration: none; }
+
+
+
+h2 {
+  writing-mode: vertical-lr;
+  font-size: 90px;
+  margin: 0;
+  text-align: center;
+  line-height: 0.9;
+   color: #cec0ae8c;
+  }
+  .rotate {
+    transform: rotate(180deg);
+ }
+
+
+
+nav {
+padding: 10px;
+border-bottom: 1px solid black;
+padding-right: 2%;
+width: 100%;
+font-size: 90%;
+padding-top: 4%;
+}
+
+
+
+ 
+@media screen and (min-width: 601px) {
+  div {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div {
+    font-size: 13px;
+  }
+}

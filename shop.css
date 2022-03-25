@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+
+html, body {
+  height: 100%;
+  }
+
+html {
+    font-size: 120%;
+  line-height: 1.4;
+}
+
+
+
+main {
+  display: none;
+  width: 80vw;
+  left: 10%;
+  height: 40vh;
+  overflow: auto;
+  position: relative;
+  padding: 1rem;
+}
+
+#wrapper {
+  display: block;
+  position: fixed;
+  text-align: center;
+  min-height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#header p {
+  font-size: 2em;
+  margin: 0;
+  padding-left: 2em;
+ }
+
+#header ul {
+  list-style-type: none;
+}
+
+#header ul li {
+  display: inline;
+  padding: 20px 20px;
+  font-size: 100%;
+  margin: 0 30px;
+
+}
+footer {
+  position:relative;
+  padding-right: 2%;
+  height: 50;
+  width: 100%;
+  bottom: 0;
+  font-size: 70%;;
+  color: whitesmoke;
+}
+footer ul {
+  list-style-type: none;
+  text-align: left;
+}
+footer ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+li {
+  display: inline;
+  margin-right: 10px;
+}
+
+
+a { text-decoration: none; }
+
+h2 {
+  font-size: 100px;
+  margin: 0;
+  writing-mode: vertical-lr;
+  text-align: center;
+  line-height: .9;
+  }
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+
+nav {
+padding: 10px;
+border-bottom: 1px solid black;
+padding-right: 2%;
+width: 100%;
+font-size: 90%;
+}
+
+ 
+@media screen and (min-width: 601px) {
+  div {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div {
+    font-size: 13px;
+  }
+}

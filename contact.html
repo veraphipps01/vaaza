@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width = device-width, initial-scale = 1"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="contact.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"/>
+     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,400&family=Megrim&family=Faster+One&display=swap" rel="stylesheet">
+   
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=GFS+Didot&display=swap" rel="stylesheet">
+ <script src="https://kit.fontawesome.com/a7697d0d2d.js" crossorigin="anonymous"></script>
+ <link rel="stylesheet" href="fonts/lazov_5.1.ttf"/>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+ <script type="text/javascript">
+   (function() {
+     emailjs.init("user_ZwHT5y02r3eSuWwcXpW5d");
+   })();
+ </script>
+     <script type="text/javascript">
+       window.onload = function() {
+           document.getElementById('contact-form').addEventListener('submit', function(event) {
+               event.preventDefault();
+                             // these IDs from the previous steps
+               emailjs.sendForm('service_79auznf', 'template_piqo0ao', this)
+                   .then(function() {
+                       alert("Thank you for reaching out! I'll be in touch shortly regarding your inquiry.");
+                       document.getElementById('contact_name').value = '';
+                       document.getElementById('contact_email').value = '';
+                       document.getElementById('contact_message').value = '';
+                       document.getElementById('contact_number').value = '';
+                   }, function(error) {
+                       alert("Unfortunately, there was a problem submitting your message - please try again later or use one of the other listed contact methods!")
+                   });
+           });
+       }
+   </script>
+
+
+    <title>_VAAZA</title>
+    
+</head>
+
+<body style="background: rgba(187, 171, 146, 0.363); ">
+   
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark" style="background: transparent ">
+             <a class="navbar-brand nav-text pt-4" style="margin-left: 50px;" href="index.html#home">
+     <img src="img/vaaza.png" height="60" class="d-inline-block align-top" alt="">
+     </a>
+        <button 
+        class="navbar-toggler" 
+        style="margin-right: 40px;"
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navbarSupportedContent" 
+        aria-controls="navbarSupportedContent" 
+        aria-expanded="false" 
+        aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon color-white" style="color:black"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent"  style="color:black; font-family: 'Courier Prime', monospace; margin-right: 40px;">
+            <ul class="navbar-nav ms-auto pt-5 d-flex align-items-end" >
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#home" style="color:black">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="shop.html" style="color:black">Sculpture</a>
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html" style="color:black">About</a> 
+                </li>
+                <li class="nav-item" >
+                    <a class="nav-link" href="contact.html" style="color:black">Contact</a>
+                </li>
+                <li class="nav-item">
+                 <a class="nav-link" class="ec-cart-widget" href="shop.html#!/~/cart" style="color:black">Cart</a>
+                                                       
+              </li>
+            </ul>
+        </div>
+ </nav>
+
+
+ 
+   
+ <!--Form-->
+
+<section style=" text-align: center; ">
+ <div class="container" style="padding-top: 100px;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+   background-size: contain;
+  padding-bottom: 100px;
+ ">
+    <div class="shadow m-5 p-5" style="color:black; justify-content: center; background-color: transparent;">
+    <div class="padded">
+        <h2 class="u-text-center" style="font-family:didot">Contact Us</h2>
+        <div class="divider" style="border-bottom: 1px solid black;"></div>
+        <p class="u-text-center" style="font-family:'Courier Prime', monospace; margin-bottom: 30px; margin-top: 15px;">If you have any questions or enquiries, please leave your message and contact details, we will get back to you as soon as possible.</p>
+        <div class="divider"></div>
+
+        <!-- 2 column grid layout with text inputs for the first and last names -->    
+        <form id="contact-form" style=" text-align: left">
+          <div class="row mb-4" >
+          <div class="col-md">
+            <div class="form-outline" >
+              <input type="text" id="contact_name" class="form-control" name="from_name" />
+              <label class="form-label" for="form6Example1" style="font-family: 'Courier Prime', monospace;">First name</label>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="form-outline">
+              <input type="text" id="contact_name" class="form-control" name="from_name"/>
+              <label class="form-label" for="form6Example2" style="font-family: 'Courier Prime', monospace";>Last name</label>
+            </div>
+          </div>
+        </div>
+      
+       
+        <!-- Email input -->
+        <div class="form-outline mb-4">
+          <input type="email" id="contact_email" class="form-control" name="from_email"/>
+          <label class="form-label" for="form6Example5" style="font-family: 'Courier Prime', monospace";>Email</label>
+        </div>
+      
+        <!-- Number input -->
+        <div class="form-outline mb-4">
+          <input type="number" id="contact_number" class="form-control" name="contact_number"/>
+          <label class="form-label" for="form6Example6" style="font-family: 'Courier Prime', monospace";>Phone</label>
+        </div>
+      
+        <!-- Message input -->
+        <div class="form-outline mb-4">
+          <input class="form-control" id="contact_message" style="height: 150px; text-align: start;" name="message"></input>
+          <label class="form-label" for="form6Example7" style="font-family: 'Courier Prime', monospace";>Your Message</label>
+        </div>
+      
+                <!-- Submit button -->
+        <button type="submit" class="btn btn-primary btn-block mb-4 p-3 pt-2 pb-2" style="background-color: rgba(97, 97, 97, 0.637); font-family:'Courier Prime', monospace; border: none; color:whitesmoke;">Send</button>
+    
+      </form>   
+    </div>
+    </div>
+ </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="mt-0 pt-0 mb-0 pb-0 position-relative " style="font-family:'Courier Prime', monospace; font-size: medium; ">
+  <div class="container-fluid pt-5 p-4 pb-0">
+  <ul class="list-group">
+    <li><a href="index.html" style="color:black;">Shipping</a></li>
+    <li><a href="about.html" style="color:black;">Terms</a></li>
+    <li><a href="https://instagram.com/____vaaza?utm_medium=copy_link" target="_blank" style="color:black;">Instagram</a></li>
+    <li><a href="contact.html" style="color:black;">Contact</a></li> 
+</ul>
+<container>      <p style="text-align:right;font-size: small; " class="lead mb-3 pb-3 mainhide">
+  <a  style="color:black;" href="https://veraphipps01.github.io/" target="_blank" ><script>document.write(new Date().getFullYear())</script> &copy;by Vera Phipps</a>
+</p>
+</container>
+  </div>
+</footer>
+
+
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"
+      ></script>
+
+  
+  
+  </body>
+</html>
